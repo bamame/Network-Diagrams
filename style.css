@@ -1,0 +1,127 @@
+:root {
+  --bg: #f2fbff;
+  --panel: #ffffff;
+  --text: #1f2d3d;
+  --pink: #ff8ac6;
+  --yellow: #ffd86b;
+  --blue: #6fc8ff;
+  --green: #89e08a;
+  --purple: #b29dff;
+  --orange: #ffb16b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Comic Sans MS", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: radial-gradient(circle at top, #dff7ff, #f6f8ff 45%, #fff4fb);
+  color: var(--text);
+}
+
+.app {
+  width: min(92vw, 430px);
+  background: var(--panel);
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(63, 91, 117, 0.2);
+  padding: 1rem 1rem 1.2rem;
+}
+
+h1 {
+  margin: 0.3rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin: 0 0 0.8rem;
+  text-align: center;
+  color: #53708c;
+}
+
+.display-wrap {
+  background: #f8fbff;
+  border: 2px dashed #bfdfff;
+  border-radius: 14px;
+  padding: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.expression {
+  min-height: 1.5rem;
+  color: #607d98;
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.result {
+  min-height: 2.2rem;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #27374a;
+  word-break: break-all;
+}
+
+.pad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55rem;
+}
+
+.key {
+  border: none;
+  border-radius: 15px;
+  min-height: 58px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.08s ease;
+  color: #25374a;
+}
+
+.key:active {
+  transform: scale(0.96);
+  filter: brightness(0.95);
+}
+
+.number {
+  background: var(--blue);
+}
+
+.operator {
+  background: var(--yellow);
+}
+
+.utility {
+  background: var(--pink);
+}
+
+.equals {
+  background: var(--green);
+  grid-row: span 2;
+}
+
+.zero {
+  grid-column: span 2;
+  background: var(--purple);
+}
+
+.tips {
+  margin-top: 0.9rem;
+  background: #fff9e8;
+  border-radius: 12px;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ffe5ad;
+}
+
+#mascot {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #765111;
+}

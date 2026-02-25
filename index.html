@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>儿童计算器乐园</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="儿童计算器">
+      <h1>🌈 儿童计算器乐园</h1>
+      <p class="subtitle">点击彩色按钮，一起快乐算术！</p>
+
+      <section class="display-wrap" aria-live="polite">
+        <div id="expression" class="expression">0</div>
+        <div id="result" class="result">0</div>
+      </section>
+
+      <section class="pad" aria-label="计算器按键区">
+        <button class="key utility" data-action="clear">清空</button>
+        <button class="key utility" data-action="backspace">⌫</button>
+        <button class="key operator" data-value="/">÷</button>
+        <button class="key operator" data-value="*">×</button>
+
+        <button class="key number" data-value="7">7</button>
+        <button class="key number" data-value="8">8</button>
+        <button class="key number" data-value="9">9</button>
+        <button class="key operator" data-value="-">−</button>
+
+        <button class="key number" data-value="4">4</button>
+        <button class="key number" data-value="5">5</button>
+        <button class="key number" data-value="6">6</button>
+        <button class="key operator" data-value="+">＋</button>
+
+        <button class="key number" data-value="1">1</button>
+        <button class="key number" data-value="2">2</button>
+        <button class="key number" data-value="3">3</button>
+        <button class="key equals" data-action="equals">=</button>
+
+        <button class="key number zero" data-value="0">0</button>
+        <button class="key number" data-value=".">.</button>
+      </section>
+
+      <section class="tips">
+        <p id="mascot">🦊 小提示：先输入数字，再选运算符哦！</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
